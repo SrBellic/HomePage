@@ -1,0 +1,612 @@
+@import "./bootstrap/bootstrap-icons.css";
+
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+  scrollbar-width: auto;
+  scrollbar-color: #02557d rgba(255, 255, 255, 0.032);
+}
+
+footer {
+  background-color: #02557d;
+  color: #fafdfb;
+}
+
+footer h3 {
+  color: #ffb749;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fafdfb;
+  transition: ease-out 0.3s;
+}
+
+a:hover {
+  transition: ease-in 0.3s;
+  color: #ffb749;
+}
+
+h5 a:hover {
+  text-decoration: none;
+}
+
+#main-header {
+  position: relative;
+  padding-bottom: 14px;
+  background: none;
+  transition: 0.3s ease-out;
+}
+
+.header-scrolled {
+  position: fixed !important;
+  z-index: 1000;
+  width: 100%;
+  background-color: #02557d !important;
+  transition: 0.3s ease-in;
+}
+
+#top-header {
+  background-color: #02557d;
+  width: 100vw;
+  color: #fafdfb;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-out;
+}
+
+#top-header a {
+  text-decoration: none;
+}
+
+.top-header-scrolled {
+  background-color: #fafdfb !important;
+  transition: background-color 0.3s ease-in;
+}
+.top-header-scrolled a {
+  color: #02557d !important;
+}
+
+.top-header-scrolled a:hover {
+  color: #ffb749 !important;
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 46px;
+  margin-top: 20px;
+}
+
+#main-nav ul a {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fafdfb;
+  transition: ease-out 0.3s;
+}
+
+#main-nav ul a:hover {
+  transition: ease-in 0.3s;
+  color: #ffb749;
+}
+
+#social-medias ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+#social-medias ul a {
+  transition: ease-out 0.3s;
+  color: #fafdfb;
+}
+
+#social-medias ul a:hover {
+  transition: ease-in 0.3s;
+  color: #ffb749;
+}
+
+#register-box header {
+  background-color: #02557d;
+  color: #fafdfb;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: #ffb947 solid 4px;
+}
+
+#logo-footer {
+  width: 5rem;
+}
+
+#the-most-popular {
+  background-color: #fafdfb;
+  color: #02557d;
+}
+#the-most-popular h4 ul li {
+  list-style-type: none;
+  color: #02557d;
+}
+#the-most-popular h4 ul li::before {
+  content: "•";
+  color: #ffb749;
+  font-size: 46px;
+  margin: 0px 10px 0 -20px;
+}
+
+#the-most-popular img {
+  width: 100%;
+}
+
+#about-us {
+  background-color: #02557d;
+  color: #fafdfb;
+}
+
+#about-us h4 ul li {
+  list-style-type: none;
+}
+
+#about-us h4 ul li::before {
+  content: "•";
+  color: #ffb749;
+  font-size: 46px;
+  margin: 0px 10px 0 -20px;
+}
+
+#about-us img {
+  width: 80%;
+  border: #b6d2e1 solid 7px;
+}
+
+#benefits {
+  background: url("../assets/img/background/BACKGROUND\ BENEFITS.jpg") no-repeat;
+  background-size: cover;
+}
+
+#benefits h3 {
+  color: #fafdfb;
+  text-align: center;
+}
+
+#courses {
+  background-color: #fafdfb;
+  color: #02557d;
+}
+
+#courses h4 ul li {
+  list-style-type: none;
+}
+
+#courses h4 ul li::before {
+  content: "•";
+  color: #ffb749;
+  font-size: 46px;
+  margin: 0px 10px 0 -20px;
+}
+
+#courses .card {
+  border-radius: 1.25rem;
+}
+
+#courses img {
+  width: 100%;
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+
+#team {
+  background-color: #efefef;
+  color: #02557d;
+}
+
+#team h4 ul li {
+  list-style-type: none;
+}
+
+#team h4 ul li::before {
+  content: "•";
+  color: #ffb749;
+  font-size: 46px;
+  margin: 0px 10px 0 -20px;
+}
+
+#reviews {
+  background-color: #fafdfb;
+  color: #02557d;
+}
+
+#reviews h4 ul li {
+  list-style-type: none;
+}
+
+#reviews h4 ul li::before {
+  content: "•";
+  color: #ffb749;
+  font-size: 46px;
+  margin: 0px 10px 0 -20px;
+}
+
+.reviews-container {
+  padding: 30px;
+  background-color: #02557d;
+  color: #fafdfb;
+}
+
+.container .reviews-container {
+  padding: 10px 70px 30px 70px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.video-thumbnail,
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video {
+  display: none; /* El video está oculto inicialmente */
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.video-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-play {
+  width: 26%;
+  height: 25%;
+  font-size: 24px;
+  background-color: orange;
+  color: #fafdfb;
+  border-radius: 200px;
+  border: #fafdfb solid 2px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  overflow: hidden !important;
+  position: relative!;
+}
+
+.horizontal-card {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+#courses .card img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.horizontal-card img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.3s ease;
+}
+
+.horizontal-card .contract-img {
+  object-fit: cover;
+  object-position: 25% 50% !important;
+} /*Revisar*/
+
+#courses .card img.expanded {
+  transform: scale(1.1);
+}
+
+.horizontal-card img.expanded {
+  transform: scale(1.1);
+}
+
+#courses .card .overlay {
+  border-radius: 1.25rem;
+  position: absolute;
+  padding: 0 0 30px 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: left;
+  color: white;
+  background: rgba(2, 85, 125, 0.5);
+  transition: background 0.3s ease;
+}
+
+.horizontal-card .overlay {
+  padding: 0 0 30px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: left;
+  color: white;
+  background: rgba(2, 85, 125, 0.5);
+  transition: background 0.3s ease;
+}
+
+#courses .card .overlay.overlay.no-background {
+  background: none;
+}
+
+.horizontal-card .overlay.no-background {
+  background: none;
+}
+
+#courses .card .overlay .btn-yellow {
+  padding: 5px;
+  width: 50%;
+}
+
+.horizontal-card .overlay .btn-yellow {
+  width: 30%;
+}
+
+.icon-container {
+  width: 100px;
+  height: 100px;
+  background-color: #fafdfb;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container > img {
+  width: 75px;
+}
+
+#team .card {
+  position: relative;
+}
+
+#team .card .icon-container {
+  width: 50%;
+  height: 40%;
+  background-color: #fafdfb;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 40%; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 7px solid #fafdfb;
+}
+
+#team .icon-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a.carousel-control-prev:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+a.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+#team-carousel .card .icon-container {
+  width: 56%;
+  height: 46%;
+  border-radius: 300px;
+  border: 10px solid #fafdfb;
+  top: 50%;
+}
+
+.form-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-register {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 4px 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input-register .input-grid {
+  width: 100% !important;
+}
+
+textarea.input-register {
+  border-radius: 1rem;
+  resize: none;
+  overflow: hidden;
+}
+
+.btn-yellow {
+  background-color: #ffb749;
+  padding: 5px 50px;
+  color: #fafdfb;
+  border-radius: 100px;
+  border: #fafdfb solid 2px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+.btn-yellow:hover {
+  transition: ease-in 0.3s;
+  background: #fafdfb;
+  color: #ffb749;
+  border: #ffb749 solid 2px;
+}
+
+.btn-yellow-outline {
+  background-color: #fafdfb;
+  padding: 5px 50px;
+  color: #ffb749;
+  border-radius: 100px;
+  border: #ffb749 solid 2px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+.btn-yellow-outline:hover {
+  transition: ease-in 0.3s;
+  background: #ffb749;
+  color: #fafdfb;
+  border-color: #fafdfb;
+}
+
+.btn-yellow-lg {
+  margin: 10px 0;
+  background-color: #ffb749;
+  font-size: 24px;
+  padding: 5px 50px;
+  color: #fafdfb;
+  border-radius: 100px;
+  border: #fafdfb solid 2px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+.btn-yellow-lg:hover {
+  transition: ease-in 0.3s;
+  background: #fafdfb;
+  color: #ffb749;
+  border-color: #ffb749;
+}
+
+.btn-yellow-outline-lg {
+  margin: 10px 0;
+  background-color: #fafdfb;
+  font-size: 24px;
+  padding: 5px 50px;
+  color: #ffb749;
+  border-radius: 100px;
+  border: #ffb749 solid 2px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+.btn-yellow-outline-lg:hover {
+  transition: ease-in 0.3s;
+  background: #ffb749;
+  color: #fafdfb;
+  border-color: #fafdfb;
+}
+
+.btn-yellow-sm {
+  background-color: #ffb749;
+  padding: 5px 25px;
+  color: #fafdfb;
+  border-radius: 100px;
+  border: #fafdfb solid 2px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+.btn-yellow-sm:hover {
+  transition: ease-in 0.3s;
+  background: #fafdfb;
+  color: #ffb749;
+  border: #ffb749 solid 2px;
+}
+
+.btn-yellow-sm-outline {
+  background-color: #fafdfb;
+  padding: 5px 25px;
+  color: #ffb749;
+  border-radius: 100px;
+  border: #ffb749 solid 2px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+.btn-yellow-sm-outline:hover {
+  transition: ease-in 0.3s;
+  background: #ffb749;
+  color: #fafdfb;
+  border-color: #fafdfb;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
